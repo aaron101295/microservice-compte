@@ -1,0 +1,1 @@
+INSERT INTO compte_bancaire (id,iban,typedecompte,interet,frais) VALUES (1,'FR7630004000031234567cdc890143','courant',0.0,'gratuit');
