@@ -18,15 +18,17 @@ public class Compte implements Serializable {
     private String typedecompte;
     private Double interet;
     private String frais;
+    private Double solde;
 
     public Compte() {
     }
 
-    public Compte(String iban, String typedecompte, Double interet, String frais) {
+    public Compte(String iban, String typedecompte, Double interet, String frais, Double solde) {
         this.iban = iban;
         this.typedecompte = typedecompte;
         this.interet = interet;
         this.frais = frais;
+        this.solde = solde;
     }
 
 
@@ -38,6 +40,7 @@ public class Compte implements Serializable {
         this.id = id;
     }
 
+    @Column(name = "iban")
     public String getIban() {
         return iban;
     }
@@ -46,14 +49,17 @@ public class Compte implements Serializable {
         this.iban = iban;
     }
 
+    @Column(name = "typedecompte")
     public String getTypedecompte() {
         return typedecompte;
     }
+
 
     public void setTypedecompte(String typedecompte) {
         this.typedecompte = typedecompte;
     }
 
+    @Column(name = "interet")
     public Double getInteret() {
         return interet;
     }
@@ -62,6 +68,7 @@ public class Compte implements Serializable {
         this.interet = interet;
     }
 
+    @Column(name = "frais")
     public String getFrais() {
         return frais;
     }
@@ -69,4 +76,14 @@ public class Compte implements Serializable {
     public void setFrais(String frais) {
         this.frais = frais;
     }
+
+    @Column(name = "solde")
+    public Double getSolde() {
+        return solde;
+    }
+
+    public void setSolde(Double solde) {
+        this.solde = solde;
+    }
+
 }
