@@ -1,2 +1,3 @@
 INSERT INTO compte_bancaire (id,iban,typedecompte,interet,frais, solde) VALUES (1,'FR7630004000031234567cdc890143','courant',0.0,'gratuit',100);
-INSERT INTO compte_bancaire (id,iban,typedecompte,interet,frais, solde) VALUES (2,'FR7630004000031234567cdc890144','courant',0.0,'gratuit',100);
+INSERT INTO compte_bancaire (id,iban,typedecompte,interet,frais, solde) VALUES (2,'FR7630004000031234567cdc890144','PEL',0.075,'gratuit',1000);
+INSERT INTO compte_bancaire (id,iban,typedecompte,interet,frais, solde) VALUES (3,'FR7630004000031234567cdc890145','CEL',0.1,'gratuit',500);

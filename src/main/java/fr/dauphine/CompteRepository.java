@@ -7,4 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface CompteRepository extends JpaRepository<Compte, Long> {
     Compte findByTypedecompte(String typedecompte);
     Compte findById(long id);
+    Compte findByIban(String iban);
 }

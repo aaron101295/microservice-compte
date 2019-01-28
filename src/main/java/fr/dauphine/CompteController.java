@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.*;
@@ -112,7 +113,20 @@ public class CompteController {
     }
 
 
+    @GetMapping("/byIbSan/{iban}")
+    public Compte retrouveParIban(@PathVariable String iban) {
+        Compte compte = compteRepository.findByIban(iban);
+        return compte;
 
+    }
 
-}
+    @GetMapping("/byType/{typedecompte}")
+    public Compte retrouveParType(@PathVariable String typedecompte) {
+        Compte compte = compteRepository.findByTypedecompte(typedecompte);
+        return compte;
+
+    }
+
+    }
+
 
