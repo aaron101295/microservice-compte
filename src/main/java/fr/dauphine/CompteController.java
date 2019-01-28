@@ -113,7 +113,7 @@ public class CompteController {
     }
 
 
-    @GetMapping("/byIbSan/{iban}")
+    @GetMapping("/byIban/{iban}")
     public Compte retrouveParIban(@PathVariable String iban) {
         Compte compte = compteRepository.findByIban(iban);
         return compte;
