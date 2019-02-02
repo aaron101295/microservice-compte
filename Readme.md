@@ -27,61 +27,23 @@ Pour information notre docker se lance sur l'IP 192.168.99.100.
 
 # Exemple de requêtes
 
-Afficher tous les comptes :
-```
-GET 192.168.99.100:8000/compte/all
-```
-
-Créer un compte :
-```
-POST 192.168.99.100:8000/compte/creer
-```
-```
-{
-    "id": "xxx",
-    "iban": "xxx",
-    "typedecompte": "xxx",
-    "interet": "xxx",
-    "frais": "xxx",
-    "solde": "xxx"
-}
-```
-
-Supprimer un compte :
-```
-DELETE 192.168.99.100:8000/compte/supprimer/{id}
-```
-
-Modifier un compte :
-```
-PUT 192.168.99.100:8000/compte/MAJCompte/{id}
-```
-```
-{
-    "id": "xxx",
-    "iban": "xxx",
-    "typedecompte": "xxx",
-    "interet": "xxx",
-    "frais": "xxx",
-    "solde": "xxx"
-}
-```
-
-Rechercher un compte par type :
-```
-GET 192.168.99.100:8000/compte/byType/{typedecompte}
-```
-
 Method	| Path	| Description | Paramètres
-------------- | ------------------------- | ------------- |:------------------------------------:|
+------------- | ------------------------- | ------------- |:----------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
-POST	| /compte/creer	| Créer un compte |  "id": "xxx",
+POST	| /compte/creer	| Créer un compte | x | 
+POST	| /transactions	| Ajouter ou modifier une transaction	| x | 
+DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| | 
+PUT	| compte/MAJCompte/{id}	| Modifier un compte| x | 
+GET	| /compte/byType/{typedecompte}	| Rechercher un compte par type	| | 
+
+Paramètres :
+```
+{
+    "id": "xxx",
     "iban": "xxx",
     "typedecompte": "xxx",
     "interet": "xxx",
     "frais": "xxx",
-    "solde": "xxx" | 
-POST	| /transactions	| Ajouter ou modifier une transaction	| | 
-DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| | 
-PUT	| compte/MAJCompte/{id}	| Modifier un compte|| 
-GET	| /compte/byType/{typedecompte}	| Rechercher un compte par type	| | 
+    "solde": "xxx"
+}
+```
