@@ -75,7 +75,12 @@ GET 192.168.99.100:8000/compte/byType/{typedecompte}
 Method	| Path	| Description | Paramètres
 ------------- | ------------------------- | ------------- |:----------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
-POST	| /compte/creer	| Créer un compte | | 
+POST	| /compte/creer	| Créer un compte |  "id": "xxx",
+    "iban": "xxx",
+    "typedecompte": "xxx",
+    "interet": "xxx",
+    "frais": "xxx",
+    "solde": "xxx" | 
 POST	| /transactions	| Ajouter ou modifier une transaction	| | 
 DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| | 
 PUT	| compte/MAJCompte/{id}	| Modifier un compte|| 
