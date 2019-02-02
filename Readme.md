@@ -73,7 +73,7 @@ GET 192.168.99.100:8000/compte/byType/{typedecompte}
 ```
 
 Method	| Path	| Description | Paramètres
-------------- | ------------------------- | ------------- |:----------------:|
+------------- | ------------------------- | ------------- |:------------------------------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
 POST	| /compte/creer	| Créer un compte |  "id": "xxx",
     "iban": "xxx",
