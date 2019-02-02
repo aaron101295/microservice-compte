@@ -27,7 +27,7 @@ Pour information notre docker se lance sur l'IP 192.168.99.100.
 
 # Exemple de requêtes
 
-Method	| Path	| Description | Paramètres
+Méthode	| Path	| Description | Paramètres
 ------------- | ------------------------- | ------------- |:----------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
 POST	| /compte/creer	| Créer un compte | Oui, cf Paramètres | 
