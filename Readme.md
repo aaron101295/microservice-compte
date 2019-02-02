@@ -30,10 +30,9 @@ Pour information notre docker se lance sur l'IP 192.168.99.100.
 Method	| Path	| Description | Paramètres
 ------------- | ------------------------- | ------------- |:----------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
-POST	| /compte/creer	| Créer un compte | x | 
-POST	| /transactions	| Ajouter ou modifier une transaction	| x | 
+POST	| /compte/creer	| Créer un compte | Oui | 
 DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| | 
-PUT	| compte/MAJCompte/{id}	| Modifier un compte| x | 
+PUT	| compte/MAJCompte/{id}	| Modifier un compte| Oui | 
 GET	| /compte/byType/{typedecompte}	| Rechercher un compte par type	| | 
 
 Paramètres :
