@@ -76,21 +76,7 @@ Method	| Path	| Description | Paramètres
 ------------- | ------------------------- | ------------- |:----------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
 POST	| /compte/creer	| Créer un compte | | 
-POST	| /transactions	| Ajouter ou modifier une transaction	| {
-    "id": "xxx",
-    "iban": "xxx",
-    "typedecompte": "xxx",
-    "interet": "xxx",
-    "frais": "xxx",
-    "solde": "xxx"
-}| 
+POST	| /transactions	| Ajouter ou modifier une transaction	| | 
 DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| | 
-PUT	| compte/MAJCompte/{id}	| Modifier un compte|{
-    "id": "xxx",
-    "iban": "xxx",
-    "typedecompte": "xxx",
-    "interet": "xxx",
-    "frais": "xxx",
-    "solde": "xxx"
-}| 
+PUT	| compte/MAJCompte/{id}	| Modifier un compte|| 
 GET	| /compte/byType/{typedecompte}	| Rechercher un compte par type	| | 
