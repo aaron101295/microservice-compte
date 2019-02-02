@@ -17,7 +17,7 @@ Construction de l'image Docker à partir du Dockerfile :
 ```
 docker build -f Dockerfile -t microservice-compte . 
 ```
-```
+
 Lancement de notre image (i.e. de l'application) dans un conteneur :
 ```
 docker run -p 8000:8000 microservice-compte
