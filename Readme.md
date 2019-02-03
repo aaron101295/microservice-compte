@@ -31,10 +31,10 @@ Méthode	| Path	| Description | Paramètres
 ------------- | ------------------------- | ------------- |:----------------:|
 GET	| /compte/all	| Afficher tous les comptes	| | 
 POST	| /compte/creer	| Créer un compte | Oui, cf Paramètres | 
-DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| | 
+DELETE	| /compte/supprimer/{id}	| Supprimer un compte	| id | 
 PUT	| compte/MAJCompte/{id}	| Modifier un compte| Oui, cf Paramètres | 
-GET	| /compte/byType/{typedecompte}	| Rechercher un compte par type	| | 
-GET	| /compte/byIban/{iban}	| Rechercher un compte par Iban	| | 
+GET	| /compte/byType/{typedecompte}	| Rechercher un compte par type	| typedecompte | 
+GET	| /compte/byIban/{iban}	| Rechercher un compte par Iban	| iban | 
 
 Paramètres :
 ```
